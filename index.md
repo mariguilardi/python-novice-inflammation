@@ -20,23 +20,24 @@ Essa turma gratuita é oferecida para mulheres, como uma pequena contribuição 
 > Teremos pessoas monitoras para ajudar na configuração do ambiente e nos exercícios.
 >
 > Para aproveitar a oficina, é necessário disposição para seguir instruções por escrito.
-> Primeira instrução: a senha é "Katherine Johnson"
+> Primeira instrução: a senha solicitada na inscrição é "Katherine Johnson"
 {: .prereq}
 
 
-### Como se inscrever
+## Como se inscrever
 
-Preencha este formulário: https://forms.gle/33sEZ7KWyHM7yopE9
+Preencha este formulário: [https://forms.gle/33sEZ7KWyHM7yopE9](https://forms.gle/33sEZ7KWyHM7yopE9).
+Preencher o formulário não garante a inscrição. Você receberá um e-mail confirmando se conseguiu uma vaga ou se a turma lotou.
 
-### O resto desta página...
+## O resto desta página...
 
-É parte do material que vamos estudar.
-As aulas serão em português, e os enunciados dos exercícios também serão traduzidos para o português.
-Mas o material completo continua em inglês.
+É a apresentação do material que vamos estudar.
+As aulas serão faladas em português, e os enunciados dos exercícios também serão traduzidos para o português.
+Mas o material completo por enquanto está em inglês.
 
 A página inicial do curso em inglês está [aqui](index-en.md)
 
-## Arthritis Inflammation
+### Arthritis Inflammation
 We are studying **inflammation in patients** who have been given a new treatment for arthritis, and
 need to analyze the first dozen data sets of their daily inflammation. The data sets are stored in
 [comma-separated values]({{ page.root }}/reference/#comma-separated-values) (CSV) format:
@@ -63,6 +64,6 @@ So, we want to:
 To do all that, we'll have to learn a little bit about programming.
 
 
-## Getting Started
+### Getting Started
 To get started, follow the directions on the "[Setup](setup/)" page to download data
 and install a Python interpreter.
