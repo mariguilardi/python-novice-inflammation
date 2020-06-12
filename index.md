@@ -32,7 +32,7 @@ Serão 4 encontros online por Zoom, 3ª/5ª-feiras, 18:30, com duração de 1h30
 
 ### Como se inscrever
 
-Preencha este formulário: [https://forms.gle/33sEZ7KWyHM7yopE9](https://forms.gle/33sEZ7KWyHM7yopE9).
+Preencha este formulário: **LOTOU!** (40 inscritas).
 Preencher o formulário não garante a inscrição. Você receberá um e-mail confirmando se conseguiu uma vaga ou se a turma lotou.
 
 ## O resto desta página...
