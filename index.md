@@ -4,11 +4,39 @@ root: .
 permalink: index.html
 ---
 
-The best way to learn how to program is to do something useful,
-so this introduction to Python is built around a common scientific task:
-**data analysis**.
+## Análise de Dados c/ Python (junho/2020)
 
-### Arthritis Inflammation
+Bem-vinda à Oficina de Análise de Dados com Luciano Ramalho.
+Essa turma gratuita é oferecida para mulheres, como uma pequena contribuição para reduzir a presença desproporcional de homens entre as pessoas desenvolvedoras.
+
+> ## Pré-requisitos
+>
+> Para participar, você precisa entender os conceitos de **arquivos** e **diretórios**, e como
+> iniciar um interpretador **Python 3** e digitar comandos básicos. Não é preciso saber **Python**.
+>
+> Nas atividades, você poderá usar o Python na linha de comando, o Jupyter Notebook ou outro console interativo.
+> Se precisar de ajuda para instalar Python ou Jupyter,
+> apareça no encontro de preparação conforme instruções que enviaremos por e-mail.
+> Teremos pessoas monitoras para ajudar na configuração do ambiente e nos exercícios.
+>
+> Para aproveitar a oficina, é necessário disposição para seguir instruções por escrito.
+> Primeira instrução: a senha é "Katherine Johnson"
+{: .prereq}
+
+
+### Como se inscrever
+
+Preencha este formulário: https://forms.gle/33sEZ7KWyHM7yopE9
+
+### O resto desta página...
+
+É parte do material que vamos estudar.
+As aulas serão em português, e os enunciados dos exercícios também serão traduzidos para o português.
+Mas o material completo continua em inglês.
+
+A página inicial do curso em inglês está [aqui](index-en.md)
+
+## Arthritis Inflammation
 We are studying **inflammation in patients** who have been given a new treatment for arthritis, and
 need to analyze the first dozen data sets of their daily inflammation. The data sets are stored in
 [comma-separated values]({{ page.root }}/reference/#comma-separated-values) (CSV) format:
@@ -34,15 +62,7 @@ So, we want to:
 
 To do all that, we'll have to learn a little bit about programming.
 
-> ## Prerequisites
->
-> You need to understand the concepts of **files** and **directories** and how to start a Python
-> interpreter before tackling this lesson. This lesson sometimes references Jupyter
-> Notebook although you can use any Python interpreter mentioned in the [Setup](setup/).
->
-> The commands in this lesson pertain to **Python 3**.
-{: .prereq}
 
-### Getting Started
+## Getting Started
 To get started, follow the directions on the "[Setup](setup/)" page to download data
 and install a Python interpreter.
