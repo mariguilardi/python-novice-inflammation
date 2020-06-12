@@ -23,14 +23,14 @@ Essa turma gratuita é oferecida para mulheres, como uma pequena contribuição 
 > Primeira instrução: a senha solicitada na inscrição é "Katherine Johnson"
 {: .prereq}
 
-## Datas e horários
+### Datas e horários
 
 Serão 4 encontros online por Zoom, 3ª/5ª-feiras, 18:30, com duração de 1h30 ou 3h00, dessa forma:
 
 * 16/jun, de 18:30 a 19:30 (encontro opcional): estaremos online para ajudar as pessoas a instalar Python 3.8 e Jupyter Notebook
 * 18, 23, 25/jun, de 18:30 a 21:30: aulas expositivas e exercícios (com intervalos para descansar) 
 
-## Como se inscrever
+### Como se inscrever
 
 Preencha este formulário: [https://forms.gle/33sEZ7KWyHM7yopE9](https://forms.gle/33sEZ7KWyHM7yopE9).
 Preencher o formulário não garante a inscrição. Você receberá um e-mail confirmando se conseguiu uma vaga ou se a turma lotou.
