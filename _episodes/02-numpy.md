@@ -499,24 +499,24 @@ which is the average inflammation per patient across all days.
 
 > ## Fatiando strings
 >
-> Uma parte de um array é chamado de [slice]({{ page.root }}/reference/#slice).
-> Nós podemos obter slices de strings com caracteres também:
+> Uma parte de um array é chamado de _fatia_—em inglês, [slice]({{ page.root }}/reference/#slice).
+> Podemos obter fatias de sequências de caracteres (_strings_) também:
 >
 > ~~~
 > element = 'oxygen'
-> print('first three characters:', element[0:3])
-> print('last three characters:', element[3:6])
+> print('primeiros três caracteres:', element[0:3])
+> print('últimos três caracteres:', element[3:6])
 > ~~~
 > {: .language-python}
 >
 > ~~~
-> first three characters: oxy
-> last three characters: gen
+> primeiros três caracteres: oxy
+> últimos três caracteres: gen
 > ~~~
 > {: .output}
 >
 > Qual o valor de `element[:4]`?
-> E para `element[4:]`?
+> E de `element[4:]`?
 > Ou `element[:]`?
 >
 > > ## Resposta
@@ -543,7 +543,7 @@ which is the average inflammation per patient across all days.
 > explique o que `element[1:-1]` faz.
 >
 > > ## Resposta
-> > Cria uma substring do index 1 até (não incluindo) o index final,
+> > Cria uma substring do index 1 até o index final (exclusive),
 > > removendo efetivamente a primeira e última letra de 'oxygen'
 > {: .solution}
 >
@@ -554,26 +554,26 @@ which is the average inflammation per patient across all days.
 > > ## Resposta
 > > ~~~
 > > element = 'oxygen'
-> > print('last three characters:', element[-3:])
+> > print('últimos três caracteres:', element[-3:])
 > > element = 'carpentry'
-> > print('last three characters:', element[-3:])
+> > print('últimos três caracteres:', element[-3:])
 > > element = 'clone'
-> > print('last three characters:', element[-3:])
+> > print('últimos três caracteres:', element[-3:])
 > > element = 'hi'
-> > print('last three characters:', element[-3:])
+> > print('últimos três caracteres:', element[-3:])
 > > ~~~
 > > {: .language-python}
 > > ~~~
-> > last three characters: gen
-> > last three characters: try
-> > last three characters: one
-> > last three characters: hi
+> > últimos três caracteres: gen
+> > últimos três caracteres: try
+> > últimos três caracteres: one
+> > últimos três caracteres: hi
 > > ~~~
 > > {: .output}
 > {: .solution}
 {: .challenge}
 
-> ## Slices Finos
+> ## Fatias Finas
 >
 > O comando `element[3:3]` produz uma [string vazia]({{ page.root }}/reference/#empty-string),
 > i.e., uma string que não contém caracteres.
@@ -637,10 +637,10 @@ which is the average inflammation per patient across all days.
 >
 > > ## Resposta
 > >
-> > Uma "pegadinha" com indexação de arrays é que dimensões singletons
+> > Uma "pegadinha" com indexação de arrays é que dimensões singletons (dimensões de valor 1)
 > > são descartadas por padrão. Isso significa que `A[:, 0]` é um array 
 > > unidimensional, que não irá empilhar como desejado. Para preservar dimensões singletons,
-> > o index em si pode ser um slice ou array. Por exemplo, `A[:, :1]` retorna
+> > o índice em si pode ser um slice ou array. Por exemplo, `A[:, :1]` retorna
 > > um array de duas dimensões com uma dimensão singleton (i.e. um vetor
 > > de coluna).
 > >
@@ -662,7 +662,7 @@ which is the average inflammation per patient across all days.
 >
 > > ## Resultado
 > >
-> > Uma maneira alternativa de alcançar o mesmo resultado é utilizar a função
+> > Outra maneira de obter o mesmo resultado é utilizar a função
 > > `delete` do Numpy para remover a segunda coluna de A.
 > >
 > > ~~~
@@ -684,8 +684,8 @@ which is the average inflammation per patient across all days.
 
 > ## Mudança em Inflamação
 >
-> O dado do paciente é  _longitudinal_ de forma que cada linha representa uma
-> série de observações em relação a um indivíduo.  Isso significa que
+> O dado do paciente é _longitudinal_ de forma que cada linha representa uma
+> série de observações em relação a um indivíduo. Isso significa que
 > a mudança na inflamação ao longo do tempo é um conceito significativo.
 > Vamos descobrir como calcular as mudanças nos dados contidos em um array
 > com NumPy.
@@ -726,9 +726,9 @@ which is the average inflammation per patient across all days.
 >
 > Observe que o array com as diferenças é menor em um elemento (tamanho 6).
 >
-> Quando utilizando `numpy.diff` com um array multidimensional, um argumento `axis` pode
-> ser inserido na função para especificar qual eixo deve ser processado. Quando aplicamos
-> `numpy.diff` para o nosso array 2D de inflamação `data`, qual eixo nós deveríamos especificar?
+> Quando usar `numpy.diff` com um array multidimensional, um argumento `axis` pode
+> fornecido para especificar qual eixo deve ser processado. Quando aplicamos
+> `numpy.diff` ao nosso array 2D de inflamação `data`, qual eixo deveríamos especificar?
 >
 > > ## Resposta
 > > Já que o eixo linha (0) é pacientes, não faz sentido em utilizar as
@@ -752,7 +752,7 @@ which is the average inflammation per patient across all days.
 > {: .solution}
 >
 > Como você encontraria a maior mudança em inflamação para cada paciente? 
-> Importa se a mudança na inflamação é um aumento ou descrécimo? 
+> Importa se a mudança na inflamação é um aumento ou diminuição? 
 >
 > > ## Resposta
 > > Usando a função `numpy.max()` após utilizar a função
@@ -774,11 +774,11 @@ which is the average inflammation per patient across all days.
 > > {: .language-python}
 > >
 > > Se os valores de inflamação *diminuem* ao longo do eixo, então a diferença de
-> > um elemento para o próximo será negativo. Se
-> > você está interessado na **magnitude** da mudança e não na
+> > um elemento para o próximo será negativa. Se
+> > você está interessada na **magnitude** da mudança e não na
 > > direção, a função `numpy.absolute()` irá fornecer isto.
 > >
-> > Observe a diferença se você obter a maior diferença absoluta
+> > Observe a diferença se você obtiver a maior diferença absoluta
 > > entre as leituras.
 > >
 > > ~~~

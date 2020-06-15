@@ -182,7 +182,7 @@ weight in kilograms is now: 65.0
 > ## Verifique sua Compreensão
 >
 > Quais valores as variáveis `mass` e `age` possuem após cada comando no programa abaixo? 
-> Teste suas respostas executando os comandos. 
+> Anote suas respostas e verifique se acertou executando os comandos. 
 >
 > ~~~
 > mass = 47.5
