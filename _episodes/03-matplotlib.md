@@ -119,29 +119,29 @@ and that we want a tight layout.
 the graphs will actually be squeezed together more closely.)
 
 
-> ## Plot Scaling
+> ## Escala de Plotagem
 >
-> Why do all of our plots stop just short of the upper end of our graph?
+> Por que nossos gráficos terminam logo abaixo da extremidade superior?
 >
-> > ## Solution
-> > Because matplotlib normally sets x and y axes limits to the min and max of our data
-> > (depending on data range)
+> > ## Solução
+>> Porque matplotlib normalmente define o limite do eixo x e Y de acordo com os valores mínimo e máximo dos nossos gráficos. 
+> > (dependendo do intervalo de dados)
 > {: .solution}
 >
-> If we want to change this, we can use the `set_ylim(min, max)` method of each 'axes',
-> for example:
+> Se quisermos alterar isto, podemos usar o método `set_ylim(min, max)`  para cada 'eixo',
+> por exemplo:
 >
 > ~~~
 > axes3.set_ylim(0,6)
 > ~~~
 > {: .language-python}
 >
-> Update your plotting code to automatically set a more appropriate scale.
-> (Hint: you can make use of the `max` and `min` methods to help.)
+> Atualize seu código de plotagem para definir automaticamente uma escala mais apropriada.
+> (Dica: Você pode user os métodos `max` e `min` para ajudar.)
 >
-> > ## Solution
+> > ## Solução
 > > ~~~
-> > # One method
+> > # Um método:
 > > axes3.set_ylabel('min')
 > > axes3.plot(numpy.min(data, axis=0))
 > > axes3.set_ylim(0,6)
@@ -149,9 +149,9 @@ the graphs will actually be squeezed together more closely.)
 > > {: .language-python}
 > {: .solution}
 >
-> > ## Solution
+> > ## Solução
 > > ~~~
-> > # A more automated approach
+> > # Um método mais automatizado:
 > > min_data = numpy.min(data, axis=0)
 > > axes3.set_ylabel('min')
 > > axes3.plot(min_data)
@@ -161,16 +161,16 @@ the graphs will actually be squeezed together more closely.)
 > {: .solution}
 {: .challenge}
 
-> ## Drawing Straight Lines
+> ## Desenhando Linhas Retas
 >
-> In the center and right subplots above, we expect all lines to look like step functions because
-> non-integer value are not realistic for the minimum and maximum values. However, you can see
-> that the lines are not always vertical or horizontal, and in particular the step function
-> in the subplot on the right looks slanted. Why is this?
+> Nos subplots ao centro e à direita acima, esperamos que todas as linhas se pareçam passos de uma função porque
+> valores não inteiros não são realistas para valores de mínimo e máximo. No entanto, você pode ver
+> que as linhas nem sempre são verticais ou horizontais, e particularmente o passo da função
+> no subplot da direita parece ser inclinado. Por quê?
 >
-> > ## Solution
-> > Because matplotlib interpolates (draws a straight line) between the points.
-> > One way to do avoid this is to use the Matplotlib `drawstyle` option:
+> > ## Solução
+> > Porque o matplotlib interpola (traça uma linha reta) entre dois pontos.
+> > Uma maneira de evitar isso é usar a opção `drawstyle` do Matplotlib:
 > >
 > > ~~~
 > > import numpy
@@ -202,12 +202,12 @@ the graphs will actually be squeezed together more closely.)
 > {: .solution}
 {: .challenge}
 
-> ## Make Your Own Plot
+> ## Faça seu próprio plot
 >
-> Create a plot showing the standard deviation (`numpy.std`)
-> of the inflammation data for each day across all patients.
+> Crie um plot mostrando o desvio padrão (`numpy.std`)
+> dos dados de inflamação para cada dia de todos os pacientes.
 >
-> > ## Solution
+> > ## Solução
 > > ~~~
 > > std_plot = matplotlib.pyplot.plot(numpy.std(data, axis=0))
 > > matplotlib.pyplot.show()
@@ -216,12 +216,12 @@ the graphs will actually be squeezed together more closely.)
 > {: .solution}
 {: .challenge}
 
-> ## Moving Plots Around
+> ## Movendo Áreas ao Redor
 >
-> Modify the program to display the three plots on top of one another
-> instead of side by side.
+> Modifique o programa para mostrar os 3 plots, um em cima do outro
+> em vez de um ao lado do outro.
 >
-> > ## Solution
+> > ## Solução
 > > ~~~
 > > import numpy
 > > import matplotlib.pyplot

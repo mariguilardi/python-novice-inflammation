@@ -258,23 +258,22 @@ and much easier to read than a two-line loop;
 it will also give us the length of many other things that we haven't met yet,
 so we should always use it when we can.
 
-> ## From 1 to N
+> ## De 1 a N
 >
-> Python has a built-in function called `range` that generates a sequence of numbers. `range` can
-> accept 1, 2, or 3 parameters.
+> Python tem uma função interna chamada `range` que gera uma sequencia de números. A função `range` aceita 1, 2 ou 3 parâmetros.
 >
-> * If one parameter is given, `range` generates a sequence of that length,
->   starting at zero and incrementing by 1.
->   For example, `range(3)` produces the numbers `0, 1, 2`.
-> * If two parameters are given, `range` starts at
->   the first and ends just before the second, incrementing by one.
->   For example, `range(2, 5)` produces `2, 3, 4`.
-> * If `range` is given 3 parameters,
->   it starts at the first one, ends just before the second one, and increments by the third one.
->   For example, `range(3, 10, 2)` produces `3, 5, 7, 9`.
+> * Se um parâmetro é dado, `range` gera uma sequencia com esse comprimento,
+>   iniciando em 0 e incrementando de 1 em 1.
+>   Por exemplo, `range(3)` gera os números `0, 1, 2`.
+> * Se dois parâmetros são dados, `range` inicia no
+>   primeiro e termina antes do segundo, incrementando de 1 em 1.
+>   Por exemplo, `range(2, 5)` gera `2, 3, 4`.
+> * Se `range` receber 3 parâmetros,
+>   se inicia no primeiro, termina antes do segundo, e é incrementado pelo terceiro parâmetro.
+>   Por exemplo, `range(3, 10, 2)` gera `3, 5, 7, 9`.
 >
 > Using `range`,
-> write a loop that uses `range` to print the first 3 natural numbers:
+> Escreva um loop que use `range` para imprimir os 3 primeiros números naturais:
 >
 > ~~~
 > 1
@@ -283,7 +282,7 @@ so we should always use it when we can.
 > ~~~
 > {: .language-python}
 >
-> > ## Solution
+> > ## Solução
 > > ~~~
 > > for number in range(1, 4):
 > >     print(number)
@@ -295,9 +294,9 @@ so we should always use it when we can.
 
 
 
-> ## Understanding the loops
+> ## Compreendendo os laços
 >
-> Given the following loop:
+> Dado o seguinte laço:
 > ~~~
 > word = 'oxygen'
 > for char in word:
@@ -305,25 +304,25 @@ so we should always use it when we can.
 > ~~~
 > {: .language-python}
 >
-> How many times is the body of the loop executed?
+> Quantas vezes o corpo do laço é executado?
 >
 > * 3 times
 > * 4 times
 > * 5 times
 > * 6 times
 >
-> > ## Solution
+> > ## Solução
 > >
-> > The body of the loop is executed 6 times.
+> > O corpo do laço é executado 6 vezes.
 > >
 > {: .solution}
 {: .challenge}
 
 
 
-> ## Computing Powers With Loops
+> ## Poderes Computacionais Com Laços
 >
-> Exponentiation is built into Python:
+> Exponenciação é uma função interna do Python:
 >
 > ~~~
 > print(5 ** 3)
@@ -335,10 +334,10 @@ so we should always use it when we can.
 > ~~~
 > {: .output}
 >
-> Write a loop that calculates the same result as `5 ** 3` using
-> multiplication (and without exponentiation).
+> Escreva um laço que calcule o mesmo resultado de `5 ** 3` usando
+> multiplicação (e sem exponenciação).
 >
-> > ## Solution
+> > ## Solução
 > > ~~~
 > > result = 1
 > > for number in range(0, 3):
@@ -349,14 +348,12 @@ so we should always use it when we can.
 > {: .solution}
 {: .challenge}
 
-> ## Reverse a String
+> ## Invertendo uma String
 >
-> Knowing that two strings can be concatenated using the `+` operator,
-> write a loop that takes a string
-> and produces a new string with the characters in reverse order,
-> so `'Newton'` becomes `'notweN'`.
+> Sabendo que duas strings podem ser concatenadas usando o operador`+`, escreva um laço que pegue uma string e produza 
+> uma nova string com os caracteres na ordem inversa, então `'Newton'` se torna`'notweN'`.
 >
-> > ## Solution
+> > ## Solução
 > > ~~~
 > > newstring = ''
 > > oldstring = 'Newton'
@@ -368,11 +365,11 @@ so we should always use it when we can.
 > {: .solution}
 {: .challenge}
 
-> ## Computing the Value of a Polynomial
+> ## Computando o Valor de um Polinômio
 >
-> The built-in function `enumerate` takes a sequence (e.g. a list) and generates a
-> new sequence of the same length. Each element of the new sequence is a pair composed of the index
-> (0, 1, 2,...) and the value from the original sequence:
+> A função interna `enumerate` pega uma sequência (por exemplo, uma lista) e gera uma nova
+> sequência com o mesmo comprimento. Cada elemento da nova sequência é um par 
+> composto pelo índice (0, 1, 2,…) e o valor da sequência original:
 >
 > ~~~
 > for idx, val in enumerate(a_list):
@@ -380,12 +377,11 @@ so we should always use it when we can.
 > ~~~
 > {: .language-python}
 >
-> The code above loops through `a_list`, assigning the index to `idx` and the value to `val`.
+> O código acima percorre a lista `a_list`, atribuindo o índice ao `idx` e o valor ao `val`.
 >
-> Suppose you have encoded a polynomial as a list of coefficients in
-> the following way: the first element is the constant term, the
-> second element is the coefficient of the linear term, the third is the
-> coefficient of the quadratic term, etc.
+> Suponha que você tenha codificado um polinômio como uma lista de coeficientes da
+> seguinte maneira: o primeiro elemento é o termo da constante, o segundo elemento é o
+> coeficiente do termo linear, o terceiro é o coeficiente do termo quadrático, etc. 
 >
 > ~~~
 > x = 5
@@ -400,10 +396,10 @@ so we should always use it when we can.
 > ~~~
 > {: .output}
 >
-> Write a loop using `enumerate(coefs)` which computes the value `y` of any
-> polynomial, given `x` and `coefs`.
+> Escreva um laço usando `enumerate(coefs)` que compute o valor `y` de qualquer polinômio, 
+> dado `x` e `coefs`.
 >
-> > ## Solution
+> > ## Solução
 > > ~~~
 > > y = 0
 > > for idx, coef in enumerate(coefs):
