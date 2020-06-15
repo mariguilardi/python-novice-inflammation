@@ -179,10 +179,10 @@ weight in kilograms is now: 65.0
 {: .callout}
 
 
-> ## Check Your Understanding
+> ## Verifique sua Compreensão
 >
-> What values do the variables `mass` and `age` have after each statement in the following program?
-> Test your answers by executing the commands.
+> Quais valores as variáveis `mass` e `age` possuem após cada comando no programa abaixo? 
+> Teste suas respostas executando os comandos. 
 >
 > ~~~
 > mass = 47.5
@@ -193,7 +193,7 @@ weight in kilograms is now: 65.0
 > ~~~
 > {: .language-python}
 >
-> > ## Solution
+> > ## Resposta
 > > ~~~
 > > 95.0 102
 > > ~~~
@@ -201,9 +201,9 @@ weight in kilograms is now: 65.0
 > {: .solution}
 {: .challenge}
 
-> ## Sorting Out References
+> ## Classificando Referências
 >
-> What does the following program print out?
+> O que o programa a seguir imprime? 
 >
 > ~~~
 > first, second = 'Grace', 'Hopper'
@@ -212,7 +212,7 @@ weight in kilograms is now: 65.0
 > ~~~
 > {: .language-python}
 >
-> > ## Solution
+> > ## Resposta
 > > ~~~
 > > Hopper Grace
 > > ~~~
