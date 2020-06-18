@@ -637,7 +637,8 @@ which is the average inflammation per patient across all days.
 >
 > > ## Resposta
 > >
-> > Uma "pegadinha" com indexação de arrays é que dimensões unitárias (dimensões de valor 1, chamadas em inglês de _singleton dimensions_)
+> > Uma "pegadinha" com indexação de arrays é que dimensões unitárias
+> > (dimensões de valor 1, chamadas em inglês de _singleton dimensions_)
 > > são descartadas por padrão. Isso significa que `A[:, 0]` é um array 
 > > unidimensional, que não irá empilhar como desejado. Para preservar dimensões unitárias,
 > > o índice em si pode ser um slice ou array. Por exemplo, `A[:, :1]` retorna

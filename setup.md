@@ -5,38 +5,38 @@ permalink: /setup/index.html
 root: ..
 ---
 
-## Overview
+## Visão geral
 
-This lesson is designed to be run on a personal computer.
-All of the software and data used in this lesson are freely available online,
-and instructions on how to obtain them are provided below.
+Esta lição foi criada para ser feita em um computador pessoal.
+Todo o software e dados usados ​​nesta lição estão disponíveis gratuitamente on-line,
+e instruções sobre como obtê-los são fornecidas abaixo.
 
-## Install Python
+## Instalar Python
 
-In this lesson, we will be using Python 3 with some of its most popular scientific libraries.
-Although one can install a plain-vanilla Python and all required libraries by hand,
-we recommend installing [Anaconda][anaconda-website],
-a Python distribution that comes with everything we need for the lesson.
-Detailed installation instructions for various operating systems can be found
-on The Carpentries [template website for workshops][anaconda-instructions]
-and in [Anaconda documentation][anaconda-install].
+Nesta lição, usaremos o Python 3 com algumas de suas bibliotecas científicas mais populares.
+Embora seja possível instalar manualmente um Python básico e todas as bibliotecas necessárias,
+recomendamos instalar [Anaconda][anaconda-website],
+uma distribuição Python que vem com tudo o que precisamos para a lição.
+Instruções detalhadas de instalação para vários sistemas operacionais podem ser encontradas
+em The Carpentries [modelo de website para oficinas][anaconda-instructions]
+e na [documentação do pacote Anaconda][anaconda-install].
 
-## Obtain lesson materials
+## Obter dados para a lição
 
-1. Download [python-novice-inflammation-data.zip][zipfile1]
-        and [python-novice-inflammation-code.zip][zipfile2].
-2. Create a folder called `swc-python` on your Desktop.
-3. Move downloaded files to `swc-python`.
-4. Unzip the files.
+1. Baixe [python-novice-inflammation-data.zip][zipfile1]
+        e [python-novice-inflammation-code.zip][zipfile2].
+2. Crie uma pasta chamada `swc-python` em seu Desktop (Área de Trabalho).
+3. Mova os dois arquivos baixados para `swc-python`.
+4. Des-zipe os arquivos.
 
-You should see two folders called `data` and `code` in the `swc-python` directory on your
-Desktop.
+Agora você deverá pastas `data` e `code` na pasta `swc-python` 
+em seu Desktop (Área de Trabalho).
 
-## Launch Python interface
+## Abra o console do Python
 
-To start working with Python, we need to launch a program that will interpret and execute our Python
-commands. Below we list several options. If you don't have a preference, proceed with the top
-option in the list that is available on your machine. Otherwise, you may use any interface you like.
+Para começar a trabalhar com Python, precisamos abrir um programa que interprete e execute
+comandos Python. Tal programa é um _console_ do Python. Abaixo listamos várias opções. Se você não tem uma preferência, use a primeira
+opção que estiver instalada em sua máquina. Ou então, use o console de sua preferência.
 
 ## Option A: Jupyter Notebook
 
