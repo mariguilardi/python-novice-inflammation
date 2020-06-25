@@ -306,23 +306,23 @@ odds: [1, 3, 5, 7]
 ~~~
 {: .output}
 
-> ## Turn a String Into a List
+> ## Transforme uma String em uma Lista
 >
-> Use a for-loop to convert the string "hello" into a list of letters:
+> Use um loop for para converter a string "hello" em uma lista de letras:
 >
 > ~~~
 > ["h", "e", "l", "l", "o"]
 > ~~~
 > {: .language-python}
 >
-> Hint: You can create an empty list like this:
+> Dica: Você pode criar uma lista vazia como esta:
 >
 > ~~~
 > my_list = []
 > ~~~
 > {: .language-python}
 >
-> > ## Solution
+> > ## Solução
 > > ~~~
 > > my_list = []
 > > for char in "hello":
@@ -333,9 +333,9 @@ odds: [1, 3, 5, 7]
 > {: .solution}
 {: .challenge}
 
-Subsets of lists and strings can be accessed by specifying ranges of values in brackets,
-similar to how we accessed ranges of positions in a NumPy array.
-This is commonly referred to as "slicing" the list/string.
+Subconjunto de listas e strings podem ser acessados especificando intervalos de valores entre colchetes,
+semelhante à maneira como acessamos intervalos de posições em uma matriz NumPy.
+Isso é geralmente chamado de "fatiar" a lista/string.
 
 ~~~
 binomial_name = "Drosophila melanogaster"
@@ -362,9 +362,9 @@ last: 4
 ~~~
 {: .output}
 
-> ## Slicing From the End
+> ## Fatiando a Partir do Final
 >
-> Use slicing to access only the last four characters of a string or entries of a list.
+> Use o fatiamento para acessar apenas os últimos quatro caracteres de uma string ou entradas de uma lista.
 >
 > ~~~
 > string_for_slicing = "Observation date: 02-Feb-2013"
@@ -382,15 +382,15 @@ last: 4
 > ~~~
 > {: .output}
 >
-> Would your solution work regardless of whether you knew beforehand
-> the length of the string or list
-> (e.g. if you wanted to apply the solution to a set of lists of different lengths)?
-> If not, try to change your approach to make it more robust.
+> Sua solução funcionaria independentemente de você saber o 
+> comprimento da string ou lista
+> (por exemplo, se você quisesse aplicar a solução  a um conjunto de listas de comprimentos diferentes)?
+> Caso contrário, tente alterar sua abordagem para torná-la mais robusta.
 >
-> Hint: Remember that indices can be negative as well as positive
+> Dica: Lembre-se que índices podem ser negativos e positivos.
 >
-> > ## Solution
-> > Use negative indices to count elements from the end of a container (such as list or string):
+> > ## Soluçao
+> > Use índices negativos para contar os elementos a partir do final do contêiner (como lista ou sequência):
 > >
 > > ~~~
 > > string_for_slicing[-4:]
@@ -400,16 +400,16 @@ last: 4
 > {: .solution}
 {: .challenge}
 
-> ## Non-Continuous Slices
+> ## Fatias não Contínuas
 >
-> So far we've seen how to use slicing to take single blocks
-> of successive entries from a sequence.
-> But what if we want to take a subset of entries
-> that aren't next to each other in the sequence?
+> Até agora vimos como usar o fatiamento para obter blocos únicos de entradas 
+> sucessivas de uma sequência.
+> Mas e se quisermos obter um subconjunto de entradas
+> que não estão próximos um do outro na sequência?
 >
-> You can achieve this by providing a third argument
-> to the range within the brackets, called the _step size_.
-> The example below shows how you can take every third entry in a list:
+> Você pode conseguir isso fornecendo um terceiro argumento
+> para o intervalo entre colchetes, chamado de _passo_.
+> O exemplo abaixo mostra como é possível obter cada terceira entrada da lista:
 >
 > ~~~
 > primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]
@@ -423,10 +423,10 @@ last: 4
 > ~~~
 > {: .output}
 >
-> Notice that the slice taken begins with the first entry in the range,
-> followed by entries taken at equally-spaced intervals (the steps) thereafter.
-> If you wanted to begin the subset with the third entry,
-> you would need to specify that as the starting point of the sliced range:
+> Observe que a fatia obtida começa com o primeiro argumento do range,
+> seguido por entradas em intervalos igualmente espaçados (os passos) em seguida.
+> Se você deseja iniciar o subconjunto com o terceiro argumento,
+> precisará especificar isso como ponto inicial do intervalo fatiado:
 >
 > ~~~
 > primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]
@@ -440,8 +440,8 @@ last: 4
 > ~~~
 > {: .output}
 >
-> Use the step size argument to create a new string
-> that contains only every other character in the string
+> Use o argumento do tamanho de passo para criar uma nova string
+> que contenha um a cada dois caracteres da string
 > "In an octopus's garden in the shade"
 >
 > ~~~
@@ -454,18 +454,18 @@ last: 4
 > ~~~
 > {: .output}
 >
-> > ## Solution
-> > To obtain every other character you need to provide a slice with the step
-> > size of 2:
+> > ## Solução
+> > Para obter um a cada dois caracteres você precisa fornecer uma fatia 
+> > de tamanho 2:
 > >
 > > ~~~
 > > beatles[0:35:2]
 > > ~~~
 > > {: .language-python}
 > >
-> > You can also leave out the beginning and end of the slice to take the whole string
-> > and provide only the step argument to go every second
-> > element:
+> > Você pode deixar de fora o início e o final da fatia para pegar a string inteira
+> > e fornecer apenas o argumento para cada dois 
+> > elementos:
 > >
 > > ~~~
 > > beatles[::2]
@@ -474,8 +474,7 @@ last: 4
 > {: .solution}
 {: .challenge}
 
-If you want to take a slice from the beginning of a sequence, you can omit the first index in the
-range:
+Se você deseja obter uma fatia do início da sequência, você pode omitir o primeiro índice do range:
 
 ~~~
 date = "Monday 4 January 2016"
@@ -492,8 +491,7 @@ Omitting beginning index: Monday
 ~~~
 {: .output}
 
-And similarly, you can omit the ending index in the range to take a slice to the very end of the
-sequence:
+Da mesma forma, você pode omitir o índice final no intervalo para obter uma fatia até o final da sequência: 
 
 ~~~
 months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
@@ -513,11 +511,11 @@ Omitting ending index: ["sep", "oct", "nov", "dec"]
 ~~~
 {: .output}
 
-> ## Overloading
+> ## Sobrecarga
 >
-> `+` usually means addition, but when used on strings or lists, it means "concatenate".
-> Given that, what do you think the multiplication operator `*` does on lists?
-> In particular, what will be the output of the following code?
+> `+` geralmente significa adição, mas quando usado em strings e listas, significa "concatenar".
+> Dado isso, o que você acha que o operador de multiplicação `*` faz em uma lista?
+> Em particular, qual será a saída do código a seguir?
 >
 > ~~~
 > counts = [2, 4, 6, 8, 10]
@@ -531,14 +529,14 @@ Omitting ending index: ["sep", "oct", "nov", "dec"]
 > 3.  `[[2, 4, 6, 8, 10],[2, 4, 6, 8, 10]]`
 > 4.  `[2, 4, 6, 8, 10, 4, 8, 12, 16, 20]`
 >
-> The technical term for this is *operator overloading*:
-> a single operator, like `+` or `*`,
-> can do different things depending on what it's applied to.
+> O termo técnico para isto é *sobrecarga de operadores*:
+> um único operador, como `+` ou `*`,
+> pode fazer coisas diferentes dependendo de aonde for aplicado.
 >
-> > ## Solution
+> > ## Solução
 > >
-> > The multiplication operator `*` used on a list replicates elements of the list and concatenates
-> > them together:
+> > O operador de multiplicação `*` usado em uma lista, replica os elementos da lista e os concatena 
+> > juntos:
 > >
 > > ~~~
 > > [2, 4, 6, 8, 10, 2, 4, 6, 8, 10]
