@@ -21,7 +21,7 @@ import glob
 {: .language-python}
 
 The `glob` library contains a function, also called `glob`,
-that finds files and directories whose names match a pattern.
+that finds files and directories whose names match a pattern. 
 We provide those patterns as strings:
 the character `*` matches zero or more characters,
 while `?` matches any one character.
@@ -107,13 +107,13 @@ and their minima show the same staircase structure;
 a different situation has been revealed in the third dataset,
 where the maxima are a bit less regular, but the minima are consistently zero.
 
-> ## Plotting Differences
+> ## Plotando Diferenças
 >
-> Plot the difference between the average inflammations reported in the first and second datasets
-> (stored in `inflammation-01.csv` and `inflammation-02.csv`, correspondingly),
-> i.e., the difference between the leftmost plots of the first two figures.
+>  Plote a diferença entre as médias de inflamações relatadas no primeiro e segundo datasets
+> (armazenados em `inflammation-01.csv` e `inflammation-02.csv`, respectivamente),
+> i.e., a diferença entre os plots mais à esquerda das duas primeiras figuras.
 >
-> > ## Solution
+> > ## Resposta
 > > ~~~
 > > import glob
 > > import numpy
@@ -136,9 +136,9 @@ where the maxima are a bit less regular, but the minima are consistently zero.
 > {: .solution}
 {: .challenge}
 
-> ## Generate Composite Statistics
+> ## Gerar Estatísticas Compostas 
 >
-> Use each of the files once to generate a dataset containing values averaged over all patients:
+> Use cada um dos arquivos uma vez para gerar um dataset contendo valores médios de todos os pacientes;
 >
 > ~~~
 > filenames = glob.glob('inflammation*.csv')
@@ -151,9 +151,9 @@ where the maxima are a bit less regular, but the minima are consistently zero.
 > ~~~
 > {: .language-python}
 >
-> Then use pyplot to generate average, max, and min for all patients.
+> Após isso, use Then use ``pyplot`` para gerar a média, máximo e mínimo para todos os pacientes.
 >
-> > ## Solution
+> > ## Resposta
 > > ~~~
 > > import glob
 > > import numpy

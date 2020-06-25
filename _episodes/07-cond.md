@@ -230,9 +230,9 @@ but we could also imagine not using the `else` catch-all
 so that messages are only printed when something is wrong,
 freeing us from having to manually examine every plot for features we've seen before.
 
-> ## How Many Paths?
+> ## Quantos Caminhos?
 >
-> Consider this code:
+> Considere esse código:
 >
 > ~~~
 > if 4 > 5:
@@ -244,26 +244,26 @@ freeing us from having to manually examine every plot for features we've seen be
 > ~~~
 > {: .language-python}
 >
-> Which of the following would be printed if you were to run this code?
-> Why did you pick this answer?
+> Qual das seguintes respostas seria impressa se você executar esse código?
+> Por que você selecionou essa resposta?
 >
 > 1.  A
 > 2.  B
 > 3.  C
 > 4.  B and C
 >
-> > ## Solution
-> > C gets printed because the first two conditions, `4 > 5` and `4 == 5`, are not true,
-> > but `4 < 5` is true.
+> > ## Resposta 
+> > C é impresso porque as duas primeiras condições, `4 > 5` e `4 == 5`, não são verdadeiras,
+> > mas `4 < 5` é verdade.
 > {: .solution}
 {: .challenge}
 
-> ## What Is Truth?
+> ## O Que É Verdade?
 >
-> `True` and `False` booleans are not the only values in Python that are true and false.
-> In fact, *any* value can be used in an `if` or `elif`.
-> After reading and running the code below,
-> explain what the rule is for which values are considered true and which are considered false.
+> Os booleanos `True` e `False` não são os únicos valores em Python que são verdadeiro e falso.
+> De fato, *qualquer* valor pode ser usado em um `if` ou `elif`.
+> Depois de ler e executar o código abaixo,
+> explique qual a regra para quais valores são considerados `True` e quais valores são considerados `False`.
 >
 > ~~~
 > if '':
@@ -282,13 +282,13 @@ freeing us from having to manually examine every plot for features we've seen be
 > {: .language-python}
 {: .challenge}
 
-> ## That's Not Not What I Meant
+> ## Isso Não É O Que Eu Quis Dizer
 >
-> Sometimes it is useful to check whether some condition is not true.
-> The Boolean operator `not` can do this explicitly.
-> After reading and running the code below,
-> write some `if` statements that use `not` to test the rule
-> that you formulated in the previous challenge.
+> Algumas vezes é útil verificar se uma condição não é verdadeira. 
+> O operador Booleano `not` pode fazer isso explicitamente.
+> Após ler e executar o código abaixo,
+> escreva comandos com `if` que usam `not` para testar a regra
+> que você formulou no desafio anterior.
 >
 > ~~~
 > if not '':
@@ -301,14 +301,14 @@ freeing us from having to manually examine every plot for features we've seen be
 > {: .language-python}
 {: .challenge}
 
-> ## Close Enough
+> ## Perto O Suficiente
 >
-> Write some conditions that print `True` if the variable `a` is within 10% of the variable `b`
-> and `False` otherwise.
-> Compare your implementation with your partner's:
-> do you get the same answer for all possible pairs of numbers?
+> Escreva algumas condições que imprimam `True` se a variável `a` está dentro de 10% da variável `b`
+> e `False` de outra forma.
+> Compare sua implementação com sua colega:
+> ambas tiveram a mesma resposta para todos os pares de números possíveis?
 >
-> > ## Solution 1
+> > ## Resposta 1
 > > ~~~
 > > a = 5
 > > b = 5.1
@@ -321,22 +321,22 @@ freeing us from having to manually examine every plot for features we've seen be
 > > {: .language-python}
 > {: .solution}
 >
-> > ## Solution 2
+> > ## Resposta 2
 > > ~~~
 > > print(abs(a - b) < 0.1 * abs(b))
 > > ~~~
 > > {: .language-python}
 > >
-> > This works because the Booleans `True` and `False`
-> > have string representations which can be printed.
+> > Isso funciona porque os Booleanos `True` e `False`
+> > tem representações como strings que podem ser impressas.
 > {: .solution}
 {: .challenge}
 
-> ## In-Place Operators
+> ## Operadores No Local
 >
-> Python (and most other languages in the C family) provides
-> [in-place operators]({{ page.root }}/reference/#in-place-operators)
-> that work like this:
+> Python (e a maior parte das linguagens na família C) fornece 
+> operadores no local - [operadores in-place]({{ page.root }}/reference/#in-place-operators)
+> que funcionam da seguinte forma:
 >
 > ~~~
 > x = 1  # original value
@@ -351,12 +351,12 @@ freeing us from having to manually examine every plot for features we've seen be
 > ~~~
 > {: .output}
 >
-> Write some code that sums the positive and negative numbers in a list separately,
-> using in-place operators.
-> Do you think the result is more or less readable
-> than writing the same without in-place operators?
+> Escreva um código que soma os números positivos e negativos em uma lista separadamente,
+> usando o operadores in-place.
+> Esse resultado é mais ou menos legível
+> do que escrever o mesmo sem os operadores in-place?
 >
-> > ## Solution
+> > ## Resposta
 > > ~~~
 > > positive_sum = 0
 > > negative_sum = 0
@@ -378,18 +378,18 @@ freeing us from having to manually examine every plot for features we've seen be
 > {: .solution}
 {: .challenge}
 
-> ## Sorting a List Into Buckets
+> ## Classificando Uma Lista em Baldes
 >
-> In our `data` folder, large data sets are stored in files whose names start with
-> "inflammation-" and small data sets -- in files whose names start with "small-". We
-> also have some other files that we do not care about at this point. We'd like to break all
-> these files into three lists called `large_files`, `small_files`, and `other_files`,
-> respectively.
+> Na pasta `data`, grandes datasets estão armazenados em arquivos com nomes que iniciam com
+> "inflammation-" e pequenos datasets -- em arquivos com nomes que iniciam com "small-". Também
+> temos outros arquivos que não nos preocuparemos neste momento. Gostaríamos que quebrar todos 
+> esses arquivos em três listas chamadas `large_files`, `small_files`, e `other_files`,
+> respectivamente.
 >
-> Add code to the template below to do this. Note that the string method
+> Adicione um código para o modelo abaixo que faça isso. Observe que o método de string
 > [`startswith`](https://docs.python.org/3/library/stdtypes.html#str.startswith)
-> returns `True` if and only if the string it is called on starts with the string
-> passed as an argument, that is:
+> retorna `True` se, e somente se, a string em que é chamada começa com a string passada
+> passada como argumento, isso é:
 >
 > ~~~
 > "String".startswith("Str")
@@ -399,7 +399,7 @@ freeing us from having to manually examine every plot for features we've seen be
 > True
 > ~~~
 > {: .output}
-> But
+> Mas
 > ~~~
 > "String".startswith("str")
 > ~~~
@@ -408,7 +408,7 @@ freeing us from having to manually examine every plot for features we've seen be
 > False
 > ~~~
 > {: .output}
->Use the following Python code as your starting point:
+> Use o código Python a seguir como seu ponto de partida:
 > ~~~
 > filenames = ['inflammation-01.csv',
 >          'myscript.py',
@@ -421,13 +421,13 @@ freeing us from having to manually examine every plot for features we've seen be
 > ~~~
 > {: .language-python}
 >
-> Your solution should:
+> Sua solução deve conter:
 >
-> 1.  loop over the names of the files
-> 2.  figure out which group each filename belongs in
-> 3.  append the filename to that list
+> 1.  um loop sobre os nomes dos arquivos
+> 2.  descobrir qual grupo cada nome de arquivo pertence
+> 3.  acrescentar o nome do arquivo a essa lista
 >
-> In the end the three lists should be:
+> Ao final as três listas devem ser:
 >
 > ~~~
 > large_files = ['inflammation-01.csv', 'inflammation-02.csv']
@@ -436,7 +436,7 @@ freeing us from having to manually examine every plot for features we've seen be
 > ~~~
 > {: .language-python}
 >
-> > ## Solution
+> > ## Resposta
 > > ~~~
 > > for filename in filenames:
 > >     if filename.startswith('inflammation-'):
@@ -454,15 +454,15 @@ freeing us from having to manually examine every plot for features we've seen be
 > {: .solution}
 {: .challenge}
 
-> ## Counting Vowels
+> ## Contando Vogais
 >
-> 1. Write a loop that counts the number of vowels in a character string.
-> 2. Test it on a few individual words and full sentences.
-> 3. Once you are done, compare your solution to your neighbor's.
->    Did you make the same decisions about how to handle the letter 'y'
->    (which some people think is a vowel, and some do not)?
+> 1. Escreva um loop que conta o número de vogais em uma string de caracteres.
+> 2. Teste em algumas palavras individuais  e sentenças completas.
+> 3. Uma vez finalizado, compare sua solução com sua colega.
+>    Vocês tomaram as mesmas decisões sobre como lidar com a letra "y" 
+>    (que algumas pessoas pensam ser uma vogal e outras não)?
 >
-> > ## Solution
+> > ## Resposta
 > > ~~~
 > > vowels = 'aeiouAEIOU'
 > > sentence = 'Mary had a little lamb.'
