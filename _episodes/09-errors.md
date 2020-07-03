@@ -501,7 +501,7 @@ often reveals common reasons why you might get that error.
 
 > ## Identificando um Erro de Sintaxe
 >
-> 1. Ler o código abaixo, e (sem executá-lo) tente identificar quais são os erros.
+> 1. Leia o código abaixo, e (sem executá-lo) tente identificar quais são os erros.
 > 2. Executar o código, e ler a mensagem de erro. É um `SyntaxError` ou um `IndentationError`?
 > 3. Conserte o erro.
 > 4. Repita os passos 2 e 3, até que todos os erros sejam eliminados.
