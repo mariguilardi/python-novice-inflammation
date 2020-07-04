@@ -727,7 +727,7 @@ the program now does everything we set out to do.
 > ## Encontrando Arquivos Específicos 
 >
 > Usando o módulo `glob` introduzido [anteriormente]({{ page.root }}/04-files/),
-> escreva um versão simples de `ls` que mostre os arquivos do diretório atual
+> escreva uma versão simples de `ls` que mostre os arquivos do diretório atual
 > com um sufixo em particular.
 > Uma chamada desse script deve ser semelhante a:
 >
@@ -764,7 +764,7 @@ the program now does everything we set out to do.
 > {: .solution}
 {: .challenge}
 
-> ## Mudando Flags
+> ## Mudando _Flags_
 >
 > Reescreva `readings.py` para que use `-n`, `-m`, e `-x`
 > ao invés de `--min`, `--mean`, e `--max`, respectivamente.
@@ -812,7 +812,7 @@ the program now does everything we set out to do.
 >
 > Separadamente,
 > modifique `readings.py` para que se não for dado nenhum parâmetro
-> (i.e., nenhuma ação é especificada e nenhum nome de arquivo for dado),
+> (i.e., nenhuma ação é especificada e nenhum nome de arquivo for fornecido),
 > exiba uma mensagem explicando como deve ser usado.
 >
 > > ## Resposta
@@ -862,8 +862,8 @@ the program now does everything we set out to do.
 > ## Adicionando uma Ação Padrão
 >
 > Separadamente,
-> modifique `readings.py` para que se nenhuma ação for dada
-> exiba a média dos dados.
+> modifique `readings.py` para que exiba a média dos dados
+> se nenhuma ação for fornecida.
 >
 > > ## Resposta
 > > ~~~
@@ -953,7 +953,7 @@ the program now does everything we set out to do.
 >
 > Escreva um programa chamado `line_count.py` que funcione como o comando _Unix_ `wc`:
 >
-> *   Se nenhum nome de arquivo é dado, exibe o número de linhas do input padrão.
+> *   Se nenhum nome de arquivo é dado, exibe o número de linhas do _input_ padrão.
 > *   Se um ou mais nomes de arquivo são dados, exibe o número de linha em cada,
 >     seguido pelo número total de linhas.
 >
