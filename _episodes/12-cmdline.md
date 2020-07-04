@@ -666,7 +666,7 @@ the program now does everything we set out to do.
 
 > ## Aritmética na Linha de Comando 
 >
-> Escreva um programa em linha de comando que faz adição e subtração:
+> Escreva um programa em linha de comando que faça adição e subtração:
 >
 > ~~~
 > $ python arith.py add 1 2
@@ -726,7 +726,7 @@ the program now does everything we set out to do.
 
 > ## Encontrando Arquivos Específicos 
 >
-> Usando o módulo `glob` introduzido [anteriormente]({{ page.root }}/04-files/),
+> Usando o módulo `glob` introduzido [anteriormente](https://dadosprobr.github.io/python-novice-inflammation/06-files/index.html),
 > escreva uma versão simples de `ls` que mostre os arquivos do diretório atual
 > com um sufixo em particular.
 > Uma chamada desse script deve ser semelhante a:
